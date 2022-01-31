@@ -12,6 +12,10 @@ if (strlen($name) > 3 && (strpos($mail, ".") && strpos($mail, "@")) && is_numeri
     $check = "Accesso negato";
 }
 
+// ## Snack 3
+// Creare un array di array. Ogni array figlio avrà come chiave una data in questo formato: DD-MM-YYYY es 01-01-2007 e come valore un array di post associati a quella data. Stampare ogni data con i relativi post.
+
+
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +27,6 @@ if (strlen($name) > 3 && (strpos($mail, ".") && strpos($mail, "@")) && is_numeri
     <title>Blocco PHP Snacks</title>
 </head>
 <body>
-    <h1>NAME: <?php echo $check; ?></h1>
+    <h1><?php echo $check; ?></h1>
 </body>
 </html>
