@@ -42,7 +42,6 @@ $posts = [
 ];
 
 foreach ($posts as $key => $post){
-    var_dump($key);
     echo '<ul>' . $key;
 
     foreach ($post as $allPost) {
