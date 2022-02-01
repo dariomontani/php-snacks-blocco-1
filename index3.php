@@ -41,15 +41,6 @@ $posts = [
     ],
 ];
 
-foreach ($posts as $key => $post){
-    echo '<ul>' . $key;
-
-    foreach ($post as $allPost) {
-        echo '<li>' . $allPost['title'] . '</li>' . '<li>' . $allPost['author'] . '</li>' . '<li>' . $allPost['text'] . '</li>';
-    }
-
-    echo '</ul>';
-}
 
 ?>
 
@@ -62,8 +53,16 @@ foreach ($posts as $key => $post){
     <title>Snack 3</title>
 </head>
 <body>
-    <ul>
+    <?php
+        foreach ($posts as $key => $post){
+        echo '<ul>' . $key;
 
-    </ul>
+        foreach ($post as $allPost) {
+            echo '<li>' . $allPost['title'] . '</li>' . '<li>' . $allPost['author'] . '</li>' . '<li>' . $allPost['text'] . '</li>';
+        }
+
+        echo '</ul>' . '<hr>';
+        }
+    ?>
 </body>
 </html>

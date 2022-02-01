@@ -12,10 +12,6 @@ while (count($array) < 15) {
     }
 }
 
-foreach ($array as $numero) {
-    echo '<li>' . $numero . '</li>';
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -27,5 +23,10 @@ foreach ($array as $numero) {
     <title>Snack 4</title>
 </head>
 <body>
+    <?php
+        foreach ($array as $numero) {
+        echo '<li>' . $numero . '</li>';
+        }
+    ?>
 </body>
 </html>
